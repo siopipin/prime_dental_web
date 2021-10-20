@@ -2,7 +2,7 @@ import React, { useEffect, useRef, useState } from 'react'
 import Formsy from 'formsy-react'
 import { TextFieldFormsy } from '@fuse'
 import { Button, InputAdornment, Icon } from '@material-ui/core'
-import * as authActions from 'app/auth/store/actions'
+import * as authActionsPrime from '../../stores/actions'
 import { useDispatch, useSelector } from 'react-redux'
 
 function JWTRegister(props) {
@@ -35,7 +35,7 @@ function JWTRegister(props) {
   }
 
   function handleSubmit(model) {
-    dispatch(authActions.submitRegister(model))
+    dispatch(authActionsPrime.submitRegisterPrime(model))
   }
 
   return (

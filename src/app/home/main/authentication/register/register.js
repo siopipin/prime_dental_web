@@ -5,7 +5,7 @@ import clsx from 'clsx'
 import { FuseAnimate } from '@fuse'
 import { Card, CardContent, Typography } from '@material-ui/core'
 import { Link } from 'react-router-dom'
-import JWTRegister from './components/JWTRegisterTab'
+import JWTRegister from './components/JWTRegister'
 
 const useStyles = makeStyles((theme) => ({
   root: {

@@ -2,7 +2,7 @@ import axios from 'axios'
 import jwtDecode from 'jwt-decode'
 import FuseUtils from '@fuse/FuseUtils'
 
-class jwtService extends FuseUtils.EventEmitter {
+class jwtServicePrime extends FuseUtils.EventEmitter {
   init() {
     this.setInterceptors()
     this.handleAuthentication()
@@ -137,6 +137,6 @@ class jwtService extends FuseUtils.EventEmitter {
   }
 }
 
-const instance = new jwtService()
+const instance = new jwtServicePrime()
 
 export default instance
